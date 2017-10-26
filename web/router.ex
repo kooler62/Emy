@@ -23,8 +23,9 @@ defmodule Emy.Router do
     pipe_through :browser # Use the default browser stack
 
     # route example "/user/id/{id}
-    get "/id/:id", PageController, :index
+    get "/id/:id", PageController, :user
   end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", Emy do

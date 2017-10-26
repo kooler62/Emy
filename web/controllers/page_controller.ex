@@ -4,4 +4,11 @@ defmodule Emy.PageController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+  def user(conn, %{"id" => id}) do
+    user="this is user by"<>id<>"id"
+    render conn, "user.html",id: user
+  end
+
+
 end
