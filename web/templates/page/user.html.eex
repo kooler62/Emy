@@ -5,9 +5,10 @@
 <%= "string output"%>
 <% name="John" %>
 <%= name %>
-HOW to show user_id HERE?
 
-
+<hr>
+<%= @id %>
+<hr>
 
   <div class="col-lg-6">
     <h4>Help</h4>

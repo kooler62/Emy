@@ -6,8 +6,8 @@ defmodule Emy.PageController do
   end
 
   def user(conn, %{"id" => id}) do
-    user="this is user by"<>id<>"id"
-    render conn, "user.html",id: user
+    id="this is user by"<>id<>"id"
+    render conn, "user.html",id: id
   end
 
 
