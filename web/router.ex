@@ -19,6 +19,13 @@ defmodule Emy.Router do
     get "/", PageController, :index
   end
 
+  scope "/user", Emy do
+    pipe_through :browser # Use the default browser stack
+
+    # route example "/user/id/{id}
+    get "/id/:id", PageController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", Emy do
   #   pipe_through :api
