@@ -49,8 +49,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :emy, Emy.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "emy_dev",
+  username: "root",
+  password: "root",
+  database: "test",
   hostname: "localhost",
   pool_size: 10

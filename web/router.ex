@@ -17,13 +17,14 @@ defmodule Emy.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/users", UserController
   end
 
   scope "/user", Emy do
     pipe_through :browser # Use the default browser stack
 
     # route example "/user/id/{id}
-    get "/id/:id", PageController, :user
+    get "/id/:id", UserController, :show
   end
 
 
