@@ -18,6 +18,8 @@ defmodule Emy.Router do
 
     get "/", PageController, :index
     resources "/users", UserController
+
+    get "/comments/:id", CommentController, :show
   end
 
   scope "/user", Emy do
@@ -26,7 +28,11 @@ defmodule Emy.Router do
     # route example "/user/id/{id}
     get "/id/:id", UserController, :show
   end
-
+"""
+lksflkasflaksd'asf
+  asfkajsfksjfdas
+  asdfkjasfkjasflkj
+"""
 
   # Other scopes may use custom stacks.
   # scope "/api", Emy do
